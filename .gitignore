@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+application_default_credentials.json
+
+# OS files
+.DS_Store
+# Virtual environment
+venv/
+.venv/
+env/
