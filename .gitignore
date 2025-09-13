@@ -1,9 +1,9 @@
 # Python
 __pycache__/
 *.pyc
+desktop.ini
 
 # Environment
-.env
 application_default_credentials.json
 
 # OS files
