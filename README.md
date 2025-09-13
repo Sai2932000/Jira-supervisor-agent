@@ -1,7 +1,7 @@
 🚀 Jira Supervisor Agent
 
 An intelligent automation that fetches, summarizes, and emails Jira defect reports using multi-agent architecture (LangChain + LangGraph).
-Built with Python 3.13 • Designed & coded by Sai Thumma
+Built with Python 3.13 • Designed & coded by Thumma Sai Kumar
 
 🌟 Why This Project Stands Out
 
