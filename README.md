@@ -64,7 +64,7 @@ SMTP_HOST=sandbox.smtp.mailtrap.io
 SMTP_PORT=2525
 SMTP_USERNAME=...
 SMTP_PASSWORD=...
-FROM_EMAIL=agent@qt.com
+FROM_EMAIL=yourcompany@mail.com
 MODEL_ID=gemini-2.5-flash
 MODEL_PROVIDER=google_vertexai
 
