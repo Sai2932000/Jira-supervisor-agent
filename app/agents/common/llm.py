@@ -1,14 +1,14 @@
-"""This is main module
-"""
-import asyncio
-from app.agents.supervisor import get_supervisor
-from app.common.llm import get_llm
+import os
+from dotenv import load_dotenv
+from langchain.chat_models import init_chat_model
+from langchain.chat_models.base import BaseChatModel
 
-graph = None
-
-async def initialize():
-    global graph
-    llm = await get_llm()
-    graph = await get_supervisor(llm=llm)
-
-asyncio.run(initialize())
+async def get_llm() -> BaseChatModel:
+    """This method gets the llm
+    """
+    load_dotenv()
+    llm = init_chat_model(
+        model=os.getenv('MODEL_ID'),
+        model_provider=os.getenv('MODEL_PROVIDER')
+    )
+    return llm
