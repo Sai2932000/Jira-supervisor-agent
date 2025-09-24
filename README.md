@@ -33,7 +33,7 @@ Jira Agent → collects all open defects from the LMS Jira project.
 
 Summarize Agent → condenses defects into a neat report.
 
-Email Tool → delivers the summary to yourcompany@mail.com.
+Email Tool → delivers the summary to your@mail.com.
 
 🛠️ Tech Highlights
 
