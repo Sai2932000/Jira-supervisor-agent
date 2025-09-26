@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = dependencies = [
+dependencies = [
     "aiosmtplib>=4.0.1",
     "atlassian-python-api>=4.0.4",
     "ipykernel>=6.29.5",
