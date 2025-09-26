@@ -35,7 +35,9 @@ jobs:
       - name: Install dependencies using uv
         run: |
           uv sync
-          uv add  build setuptools wheel
+      - name: Install build tools
+        run: uv add build setuptools wheel
+
       - name: Build package
         run: python -m build
 
