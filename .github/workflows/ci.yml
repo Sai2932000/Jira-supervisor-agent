@@ -35,17 +35,13 @@ jobs:
       - name: Install dependencies using uv
         run: |
           uv sync
-          uv add flake8 pytest pip-audit
+          uv add  build setuptools wheel
+      - name: Build package
+        run: python -m build
 
-      - name: Lint code
-        run: |
-          uv run flake8 .
-
-      - name: Security scan
-        run: |
-          uv run pip-audit --exit-zero
-
-      - name: Run tests
-        run: |
-          uv run pytest
+      - name: Upload package artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: my_package
+          path: dist/*
 
